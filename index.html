@@ -8,5 +8,85 @@
   </head>
   <body>
     <h1>Forms Introduction</h1>
+    <form>
+      <fieldset>
+        <legend><strong>Gather Basic Information</strong></legend>
+        <p>
+          <label for="fname">First Name: </label>
+          <input id="fname" type="text" name="fname" placeholder="First Name" />
+        </p>
+        <p>
+          <label for="lname">Last Name: </label>
+          <input id="lname" type="text" name="lname" placeholder="Last Name" />
+        </p>
+        <p>
+          <label for="phone">*Phone Number: </label>
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="2222222222"
+            required
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Create Your Password</legend>
+        <p>
+          <label for="pass1">Password</label>
+          <input id="pass1" name="pass1" type="password" required />
+        </p>
+        <p>
+          <label for="pass2">Confirm Password</label>
+          <input id="pass2" name="pass2" type="password" required />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Give Us Your Email and the Date You Want to Reserve</legend>
+        <p>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          <label for="date">Reservation Date: </label>
+          <input type="date" name="date" id="date" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Radio Buttons</legend>
+        <p>
+          <h3>Are you a Day Person or a Night Person</h3>
+          Day <input type="radio" name="pickTwo" id="day" value="day" checked />
+          Night <input type="radio" name="pickTwo" id="night" value="night" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <h3>Which of these foods do you like? (choose all that apply)</h3>
+        <input type="checkbox" name="cereal" id="cereal" value="cereal" />&nbsp;Cereal
+        <br />
+        <input type="checkbox" name="pasta" id="pasta" value="pasta" />&nbsp;Pasta
+        <br />
+        <input type="checkbox" name="steak" id="steak" value="steak" />&nbsp;Steak
+      </fieldset>
+      <fieldset>
+        <legend>Dropdown</legend>
+        <h3>Where Do You Want To Go On Vacation</h3>
+        <select name="vacations" id="vacations">
+          <option>--Please choose one of the following</option>
+          <option value="Alaska">Alaska</option>
+          <option value="borabora">Bora Bora</option>
+          <option value="cancun">Cancun</option>
+          <option value="hawaii">Hawaii</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Please tell us how we did</legend>
+        <textarea name="comment" id="comment" cols="30" rows="4">
+        </textarea>
+      </fieldset>
+      <br />
+      <button type="submit" disabled>Submit</button>
+    </form>
   </body>
 </html>
